@@ -1,4 +1,4 @@
-# libecc project
+# libecc project(include curve secp256k1)
 
 ## Copyright and license
 Copyright (C) 2017
@@ -25,7 +25,7 @@ standard, with the following specific curves and hash functions:
 
   * **Signatures**: ECDSA, ECKCDSA, ECGDSA, ECRDSA, EC{,O}SDSA, ECFSDSA.
   * **Curves**: SECP{224,256,384,521}R1, BRAINPOOLP{224,256,384,512}R1,
-  FRP256V1, GOST{256,512}. The library can be easily expanded with user
+  FRP256V1, GOST{256,512}, SECP256K1. The library can be easily expanded with user
   defined curves using a standalone helper script.
   * **Hash functions**: SHA-2 and SHA-3 hash functions (224, 256, 384, 512).
 
