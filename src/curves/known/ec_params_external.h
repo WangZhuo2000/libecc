@@ -56,6 +56,9 @@ typedef struct {
 	 *  o p_normalized =  p << p_shift
 	 *  o p_reciprocal = floor(B^3/(DMSW(p_normalized) + 1)) - B
 	 * where B = 2^(bitsizeof(word_t))
+	 * 
+	 *  p_reciprocal = B^3 / ((p_normalized >> (pbitlen - 2*WORDSIZE)) + 1) - B
+	 *	with B = 2^WORDSIZE
 	 */
 	const ec_str_param *p_shift;
 	const ec_str_param *p_normalized;

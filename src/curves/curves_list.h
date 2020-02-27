@@ -26,6 +26,7 @@
 #include "known/ec_params_secp192r1.h"
 #include "known/ec_params_secp224r1.h"
 #include "known/ec_params_secp256r1.h"
+#include "known/ec_params_secp256k1.h"
 #include "known/ec_params_secp384r1.h"
 #include "known/ec_params_secp521r1.h"
 #include "known/ec_params_frp256v1.h"
@@ -94,6 +95,9 @@ static const ec_mapping ec_maps[] = {
 #ifdef WITH_CURVE_GOST512
 	{.type = GOST512,.params = &GOST_512bits_curve_str_params},
 #endif /* WITH_CURVE_GOST512 */
+#ifdef WITH_CURVE_SECP256K1
+	{.type = SECP256K1,.params = &secp256k1_str_params},
+#endif /* WITH_CURVE_SECP256K1 */
 /* ADD curves mapping here */
 /* XXX: Do not remove the comment above, as it is
  * used by external tools as a placeholder to add or

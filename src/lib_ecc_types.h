@@ -112,6 +112,9 @@ typedef enum {
 #ifdef WITH_CURVE_BRAINPOOLP384R1
 	BRAINPOOLP384R1 = 12,
 #endif
+#ifdef WITH_CURVE_SECP256K1
+	SECP256K1 = 13,
+#endif
 /* ADD curves type here */
 /* XXX: Do not remove the comment above, as it is
  * used by external tools as a placeholder to add or
